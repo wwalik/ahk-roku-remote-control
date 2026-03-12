@@ -10,7 +10,7 @@ SendKeypress(socket, command) {
     RunWait(FullCommand, , "Hide")
 }
 
-TV_SOCKET := TV_IP . TV_ECP_PORT
+TV_SOCKET := TV_IP . ':' . TV_ECP_PORT
 ;@region General
 ;  _____                           _ 
 ; |  __ \                         | |
