@@ -20,26 +20,26 @@ TV_SOCKET := TV_IP . ':' . TV_ECP_PORT
 ;  \____/\___|_| |_|\___|_|  \__,_|_|
 
 ; Power
-^+NumpadSub::
+^!NumpadSub::
 {
 	SendKeypress(TV_SOCKET, 'Power')
 }
 
 ; Home
-^+NumpadEnter::
+^!NumpadEnter::
 {
 	SendKeypress(TV_SOCKET, 'Home')
 }
 
 ; Back
-^+NumpadAdd::
+^!NumpadAdd::
 {
 	SendKeypress(TV_SOCKET, 'Back')
 }
 
 ; Select
-^+NumpadClear::
-^+Numpad5::
+^!NumpadClear::
+^!Numpad5::
 {
 	SendKeypress(TV_SOCKET, 'Select')
 }
@@ -52,26 +52,26 @@ TV_SOCKET := TV_IP . ':' . TV_ECP_PORT
 ; |____/|_|_| |___|___|_| |_|___|_|_|  |_,_|___|_  |___|
 ;                                              |___|    
 
-^+NumpadUp::
-^+Numpad8::
+^!NumpadUp::
+^!Numpad8::
 {
 	SendKeypress(TV_SOCKET, 'Up')
 }
 
-^+NumpadDown::
-^+Numpad2::
+^!NumpadDown::
+^!Numpad2::
 {
 	SendKeypress(TV_SOCKET, 'Down')
 }
 
-^+NumpadLeft::
-^+Numpad4::
+^!NumpadLeft::
+^!Numpad4::
 {
 	SendKeypress(TV_SOCKET, 'Left')
 }
 
-^+NumpadRight::
-^+Numpad6::
+^!NumpadRight::
+^!Numpad6::
 {
 	SendKeypress(TV_SOCKET, 'Right')
 }
@@ -87,8 +87,8 @@ TV_SOCKET := TV_IP . ':' . TV_ECP_PORT
 ;                                | |              
 ;                                |_|              
 
-^+NumpadDot::
-^+NumpadDel::
+^!NumpadDot::
+^!NumpadDel::
 {
 	user_input := InputBox("Text to be sent to tv:", "Roku Remote", "W250 H100")
 	
